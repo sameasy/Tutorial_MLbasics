@@ -1,0 +1,25 @@
+Install anaconda for python 2.7 from : https://www.anaconda.com/distribution/#download-section
+
+then follow the steps:
+
+conda activate 
+conda upgrade conda
+conda upgrade --all
+conda install pip
+pip install --ignore-installed --upgrade tensorflow==1.3.0
+conda install -c conda-forge keras=2.0.8
+conda install graphviz
+conda install pydot
+
+once everything is done please open a notebook by typing:
+jupyter notebook
+
+Inside the notebook open a new python2 area then check versions of keras and tensorflow to be the same as installed:
+
+import tensorflow as tf
+import keras
+tf.__version__
+keras.__version__
+
+
+
